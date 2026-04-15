@@ -22,11 +22,11 @@ En la ventana inicial, seleccionando la opción del instalador te deja instalarl
 Con todo esto y reiniciando, el sistema ya queda instalado. Es bastante rapido ya que ocupa poco. Solo con un 1GB de RAM funciona. Tambien se crea un usuario en la instalación con posibilidad de crear uno para root tambien.
 
 ## 6. Capturas relacionadas
-![Captura GRUB](assets/img/21-vm_iso_02/iso-02-GRUB.png)
-![Captura arranque](assets/img/21-vm_iso_02/iso-02-arranque.png)
-![Captura instalador](assets/img/21-vm_iso_02/iso-02-instalador.png)
-![Captura resultado](assets/img/21-vm_iso_02/iso-02-resultado.png)
-![Captura resultado 2](assets/img/21-vm_iso_02/iso-02-resultado-2.png)
+![Captura GRUB](../../../assets/img/21-vm_iso_02/iso-02-GRUB.png)
+![Captura arranque](../../../assets/img/21-vm_iso_02/iso-02-arranque.png)
+![Captura instalador](../../../assets/img/21-vm_iso_02/iso-02-instalador.png)
+![Captura resultado](../../../assets/img/21-vm_iso_02/iso-02-resultado.png)
+![Captura resultado 2](../../../assets/img/21-vm_iso_02/iso-02-resultado-2.png)
 
 ## 7. Valoración
 Esta es tambien una muy buena opcion por lo rapido que es, aunque no es tan liviano como otros es bastante liviano. Es más bonito que Puppy, cuenta con transparencias y  un reloj arriba a la derecha. Tambien cuanta con herramientas extra y muchas funcionalidades. Funciona en liveCD al igual que Puppy, pero no se guarda igual.
