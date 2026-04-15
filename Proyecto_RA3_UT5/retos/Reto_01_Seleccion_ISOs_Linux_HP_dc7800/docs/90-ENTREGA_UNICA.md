@@ -18,6 +18,7 @@
 
 ![Portada](../assets/img/00-portada/portada.png)
 
+---
 
 ## 2. Introducción
 
@@ -35,6 +36,8 @@ Los objetivos concretos son:
 - probar las tres en una VM;
 - documentar resultados con capturas;
 - decidir un orden de instalación para el aula taller.
+
+---
 
 ## 3. Análisis del equipo real
 
@@ -62,7 +65,7 @@ Los objetivos concretos son:
 ## 5. Arranque y firmware
 - **¿Se ha observado BIOS o UEFI?:**  BIOS
 - **Observaciones del menú de arranque:**  Muestra un error en la pila CMOS, pero la BIOS se inicia y muestra algunas características
-- **Comentarios sobre el particionado previsto:**  No hay particionado porque no hay un SO instalado
+- **Comentarios sobre el particionado previsto:**  No hay particionado porque no hay un SO instalado, pero para este caso se le añadirian las particiones normales de un disco GPT, sin ninguna especifica.
 
 ## 6. Puertos y conectividad
 - **USB disponibles:**  6 en la placa y 2 delante
@@ -76,10 +79,12 @@ Es un ordenador con características de componentes de bajo rendimiento y algún
 ![PC](../assets/img/10-equipo_real/placa_base.jpeg "Imagen del PC")
 ![PC](../assets/img/10-equipo_real/bios.jpeg "Imagen del PC")
 
+---
+
 ## 4. Selección de las 3 ISOs
 
 ### 4.1 Criterios usados
-He buscado las ISOs de sistemas operativos que sean para ordenadores muy bajos recursos, que consuman poco y ocupen poco. Además es importante para al usarlos en el taller, no requieran conexión a internet.
+He buscado las ISOs de sistemas operativos que sean para ordenadores muy bajos recursos, que consuman poco y ocupen poco. Además es importante para al usarlos en el taller, que no requieran conexión a internet.
 
 ### 4.2 Tabla comparativa
 
@@ -88,14 +93,18 @@ He buscado las ISOs de sistemas operativos que sean para ordenadores muy bajos r
 | ISO 01 | MX Linux 23.2 | 64bit y 32bit | 1 GB       | 15 GB        | 2.61GB     | Completo, usable y con MXTools        | Es el que mas ocupa                            | Segunda opción |
 | ISO 02 | Peppermint OS | 64bit y 32bit | 1 GB       | 10 GB        | 1.47 GB    | Ligero y con integración en la nube   | Necesita internet, el resto no                 | Respaldo       |
 | ISO 03 | Puppy Linux   | 64bit y 32bit | 300 MB     | 1-2 GB       | 791 MB     | Muy ligero, sin necesidad de instalar | Poco convencional, necesitas guardar la sesion | Primera opcion |
-## Resumen de la comparación
 
-La mejor opción y la más completa para las limitaciones que tenemos es MX Linux. Sin embargo, para el ordenador del taller, ajustándonos a los requisitos de clase, que son que no necesite internet y que no se necesite instalar y sea MUY MUY liviano, la opcion es Puppy Linux. Ya que para MX Linux necesitamos instalarlo en un disco de almacenamiento, cosa que nuestro PC no tiene y para sacarle partido a Peppermint tambien necesita almacenamiento e internet. Aunque tambien se puede usar sin internet.
+## Resumen de la comparación
+La mejor opción y la más completa para las limitaciones que tenemos es MX Linux. Sin embargo, para el ordenador del taller, ajustándonos a los requisitos de clase, que son que no necesite internet y que no se necesite instalar y sea MUY MUY liviano, la opcion es Puppy Linux. Ya que para MX Linux necesitamos instalarlo en un disco de almacenamiento, cosa que nuestro PC no tiene y para sacarle partido a Peppermint tambien necesita almacenamiento e internet. Aunque tambien se puede usar sin internet, pero perdiendo su principal caracteristica.
+
+---
+
 ### 4.3 Ficha resumida de ISO 01
 - Distribución: Puppy Linux
 - Versión: BookwormPup64 10.0.8 (basado en Debian)
 - Motivo de elección: Es un sistema operativo ligero que puede funcionar directamente desde la RAM o un USB, sin necesitar una conexión a internet. Su entorno de escritorio consume muy poco. Lo malo es su estructura rara para usuarios estándar, ya que utiliza paquetes .sfs y requiere guardar la sesión manualmente al apagar.
 - Papel dentro del plan: Principal
+
 ### 4.3.1 Ficha COMPLETA ISO 01
 # ISO 01
 
@@ -126,6 +135,7 @@ No es como un SO Linux casual, su estructura es muy distinta a la de los sistema
 ## 6. Fuente consultada
 - **Web o documentación oficial:**  https://puppylinux-woof-ce.github.io/
 
+---
 
 ### 4.4 Ficha resumida de ISO 02
 - Distribución: MX Linux
@@ -162,6 +172,7 @@ Puede que en el ordenador no funcione tan bien, aunque sigue siendo funcional po
 ## 6. Fuente consultada
 - **Web o documentación oficial:**  https://mxlinux.org/
 
+---
 
 ### 4.5 Ficha resumida de ISO 03
 - Distribución: Peppermint OS
@@ -200,6 +211,8 @@ Requiere una buena conexión a internet para las herramientas en la nube. En la 
 ## 6. Fuente consultada
 - **Web o documentación oficial:**  https://peppermintos.com/
 
+---
+
 ## 5. Configuración de la máquina virtual
 
 # Configuración de la máquina virtual
@@ -231,6 +244,8 @@ Al propio ordenador le faltan componentes como el disco duro, por tanto puede fa
 
 En general, es más facil hacer que funcionen las ISOs en una MV, ya que la máquina real puede tener problemas en el momento de usarlo o fallar en cualquier proceso del uso de dichas ISOs debido al desconocimiento de sus características.
 
+---
+
 ## 6. Resultados de las pruebas
 
 ### 6.1 ISO 01
@@ -240,7 +255,7 @@ En general, es más facil hacer que funcionen las ISOs en una MV, ya que la máq
 - ¿Arranca después?: Sí
 - Incidencias: No
 - Capturas:
-  # Prueba ISO 01
+# Prueba ISO 01
 
 ## 1. Datos generales
 - **Nombre de la ISO probada:**  Puppy Linux, Bookworm
@@ -264,15 +279,16 @@ En mi caso estoy en la versión Bookworm de Debian, y el proceso cambia respecto
 Tras iniciarse se puede ver que el disco USB no se ve abajo a la derecha y sale el disco principal. Tambien se puede ver el almacenamiento en el visor de recursos de la derecha. Al abrir las particiones se puede ver la jerarquía de directorios común en boot y en la raíz.
 
 ## 6. Capturas relacionadas
-![Captura BIOS](assets/img/20-vm_iso_01/iso-01-GRUB.png)
-![Captura arranque](assets/img/20-vm_iso_01/iso-01-arranque.png)
-![Captura instalador](assets/img/20-vm_iso_01/iso-01-instalador.png)
-![Captura resultado](assets/img/20-vm_iso_01/iso-01-resultado.png)
-![Captura resultado 2](assets/img/20-vm_iso_01/iso-01-resultado-2.png)
+![Captura BIOS](../assets/img/20-vm_iso_01/iso-01-GRUB.png)
+![Captura arranque](../assets/img/20-vm_iso_01/iso-01-arranque.png)
+![Captura instalador](../assets/img/20-vm_iso_01/iso-01-instalador.png)
+![Captura resultado](../assets/img/20-vm_iso_01/iso-01-resultado.png)
+![Captura resultado 2](../assets/img/20-vm_iso_01/iso-01-resultado-2.png)
 
 ## 7. Valoración
 Es la principal y  mejor opción para este ordenador del taller. Porque no hace falta disco duro y porque es de los que menos consume, sin perder funcionalidades. Quitando el inconveniente de guardar cada vez que apagas. Es muy buena opción.
 
+---
 
 ### 6.2 ISO 02
 - ¿Arranca?: Sí
@@ -305,15 +321,16 @@ En la ventana inicial, seleccionando la opción del instalador te deja instalarl
 Con todo esto y reiniciando, el sistema ya queda instalado. Es bastante rapido ya que ocupa poco. Solo con un 1GB de RAM funciona. Tambien se crea un usuario en la instalación con posibilidad de crear uno para root tambien.
 
 ## 6. Capturas relacionadas
-![Captura GRUB](assets/img/21-vm_iso_02/iso-02-GRUB.png)
-![Captura arranque](assets/img/21-vm_iso_02/iso-02-arranque.png)
-![Captura instalador](assets/img/21-vm_iso_02/iso-02-instalador.png)
-![Captura resultado](assets/img/21-vm_iso_02/iso-02-resultado.png)
-![Captura resultado 2](assets/img/21-vm_iso_02/iso-02-resultado-2.png)
+![Captura GRUB](../assets/img/21-vm_iso_02/iso-02-GRUB.png)
+![Captura arranque](../assets/img/21-vm_iso_02/iso-02-arranque.png)
+![Captura instalador](../assets/img/21-vm_iso_02/iso-02-instalador.png)
+![Captura resultado](../assets/img/21-vm_iso_02/iso-02-resultado.png)
+![Captura resultado 2](../assets/img/21-vm_iso_02/iso-02-resultado-2.png)
 
 ## 7. Valoración
 Esta es tambien una muy buena opcion por lo rapido que es, aunque no es tan liviano como otros es bastante liviano. Es más bonito que Puppy, cuenta con transparencias y  un reloj arriba a la derecha. Tambien cuanta con herramientas extra y muchas funcionalidades. Funciona en liveCD al igual que Puppy, pero no se guarda igual.
 
+---
 
 ### 6.3 ISO 03
 - ¿Arranca?: Sí
@@ -345,14 +362,15 @@ El instalador me pedía 1GB de RAM minimo para funcionar. Aunque ya tenia 1024MB
 Tras 3 intentos, teniendo la misma configuración que en las otras distros, el sistema operativo da error al instalarse. Es un error debootloader. Es posible que en una maquina real no se de. No he podido instalarlo en mi maquina virtual, pero el proceso no debería de cambiar.
 
 ## 6. Capturas relacionadas
-![Captura GRUB](assets/img/22-vm_iso_03/iso-03-GRUB.png)
-![Captura arranque](assets/img/22-vm_iso_03/iso-03-arranque.png)
-![Captura instalador](assets/img/22-vm_iso_03/iso-03-instalador.png)
-![Captura resultado](assets/img/22-vm_iso_03/iso-03-resultado.png)
+![Captura GRUB](../assets/img/22-vm_iso_03/iso-03-GRUB.png)
+![Captura arranque](../assets/img/22-vm_iso_03/iso-03-arranque.png)
+![Captura instalador](../assets/img/22-vm_iso_03/iso-03-instalador.png)
+![Captura resultado](../assets/img/22-vm_iso_03/iso-03-resultado.png)
 
 ## 7. Valoración
 Teniendo a los otros SOs, me quedaría con MX Linux o Puppy linux por lo que ofrecen cada uno. Puppy Linux siendo un SO muy ligero en un pendrive y el MX Linux siendo más bonito que las otras dos opciones, con herramientas y que tambien funciona en el USB.
 
+---
 
 ## 7. Conclusión final
 
@@ -371,9 +389,11 @@ La opción principal es ideal porque no se tiene que instalar, la segunda que es
 
 ## 4. Plan para el aula taller
 Si al Puppy no le funciona la instalación o queremos simplificar las cosas tenemos la alternativa que es MX. Si MX consume mucho por su estética o por su tamaño, Peppermint es una opción parecida pero más liviana.
+
 ## 5. Aprendizaje obtenido
 He aprendido sobre distros ligeras y como instalarlas. Sobretodo a usar Puppy Linux y su forma de funcionar con "guardar estado" y su instalación, que no la he visto en ningún otro sitio. Por todo lo demás, no se diferencia con una instalación de Ubuntu o Mint. Y la MV al ser sencilla y funcionar con sistemas operativos que pesan muy poco, no me ha complicado. Tambien he aprendido sobre el error de bootloader de Peppermint, aunque no lo haya podido solucionar.
 
+---
 
 ## 8. Bibliografía
 
