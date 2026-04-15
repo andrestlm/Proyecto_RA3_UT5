@@ -23,10 +23,10 @@ Tras iniciarse se puede ver que el disco USB no se ve abajo a la derecha y sale 
 
 ## 6. Capturas relacionadas
 ![Captura BIOS](../../../assets/img/20-vm_iso_01/iso-01-GRUB.png)
-![Captura arranque](assets/img/20-vm_iso_01/iso-01-arranque.png)
-![Captura instalador](assets/img/20-vm_iso_01/iso-01-instalador.png)
-![Captura resultado](assets/img/20-vm_iso_01/iso-01-resultado.png)
-![Captura resultado 2](assets/img/20-vm_iso_01/iso-01-resultado-2.png)
+![Captura arranque](../../../assets/img/20-vm_iso_01/iso-01-arranque.png)
+![Captura instalador](../../../assets/img/20-vm_iso_01/iso-01-instalador.png)
+![Captura resultado](../../../assets/img/20-vm_iso_01/iso-01-resultado.png)
+![Captura resultado 2](../../../assets/img/20-vm_iso_01/iso-01-resultado-2.png)
 
 ## 7. Valoración
 Es la principal y  mejor opción para este ordenador del taller. Porque no hace falta disco duro y porque es de los que menos consume, sin perder funcionalidades. Quitando el inconveniente de guardar cada vez que apagas. Es muy buena opción.
