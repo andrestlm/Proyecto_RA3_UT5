@@ -391,7 +391,7 @@ La opción principal es ideal porque no se tiene que instalar, la segunda que es
 Si al Puppy no le funciona la instalación o queremos simplificar las cosas tenemos la alternativa que es MX. Si MX consume mucho por su estética o por su tamaño, Peppermint es una opción parecida pero más liviana.
 
 ## 5. Aprendizaje obtenido
-He aprendido sobre distros ligeras y como instalarlas. Sobretodo a usar Puppy Linux y su forma de funcionar con "guardar estado" y su instalación, que no la he visto en ningún otro sitio. Por todo lo demás, no se diferencia con una instalación de Ubuntu o Mint. Y la MV al ser sencilla y funcionar con sistemas operativos que pesan muy poco, no me ha complicado. Tambien he aprendido sobre el error de bootloader de Peppermint, aunque no lo haya podido solucionar.
+He aprendido sobre distros ligeras y como instalarlas. Sobretodo a usar Puppy Linux y su forma de funcionar con "guardar estado" y su instalación, que no la he visto en ningún otro sitio. Por todo lo demás, no se diferencia con una instalación de Ubuntu o Mint. Y la MV al ser sencilla y funcionar con sistemas operativos que pesan muy poco, no me ha complicado. Tambien he aprendido sobre el error de bootloader de Peppermint, aunque no lo haya podido solucionar del todo.
 
 ---
 
