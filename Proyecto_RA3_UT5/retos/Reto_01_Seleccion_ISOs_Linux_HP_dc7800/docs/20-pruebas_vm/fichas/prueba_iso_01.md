@@ -22,7 +22,7 @@ En mi caso estoy en la versión Bookworm de Debian, y el proceso cambia respecto
 Tras iniciarse se puede ver que el disco USB no se ve abajo a la derecha y sale el disco principal. Tambien se puede ver el almacenamiento en el visor de recursos de la derecha. Al abrir las particiones se puede ver la jerarquía de directorios común en boot y en la raíz.
 
 ## 6. Capturas relacionadas
-![Captura BIOS](assets/img/20-vm_iso_01/iso-01-GRUB.png)
+![Captura BIOS](../../../assets/img/20-vm_iso_01/iso-01-GRUB.png)
 ![Captura arranque](assets/img/20-vm_iso_01/iso-01-arranque.png)
 ![Captura instalador](assets/img/20-vm_iso_01/iso-01-instalador.png)
 ![Captura resultado](assets/img/20-vm_iso_01/iso-01-resultado.png)
