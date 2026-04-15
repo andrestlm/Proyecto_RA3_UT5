@@ -1,5 +1,6 @@
 # ENTREGA ÚNICA · Reto 01
 
+> [!IMPORTANT]
 > Este documento reúne toda la información necesaria para exportar la entrega final a PDF.
 
 ---
