@@ -73,8 +73,8 @@ Los objetivos concretos son:
 Es un ordenador con características de componentes de bajo rendimiento y algún componente obsoleto. Tras añadir un disco de almacenamiento para permitir poder instalar un SO, se le instalará alguna ISO ligera con un entorno gráfico minimalista, como XFCE. Se pueden probar varias con un USB con Ventoy, así se puede ver como instalar distintos SO.
 
 #### Imagen del ordenador:
-![PC](retos/Reto_01_Seleccion_ISOs_Linux_HP_dc7800/assets/img/10-equipo_real/placa_base.jpeg "Imagen del PC")
-![PC](retos/Reto_01_Seleccion_ISOs_Linux_HP_dc7800/assets/img/10-equipo_real/bios.jpeg "Imagen del PC")
+![PC](../assets/img/10-equipo_real/placa_base.jpeg "Imagen del PC")
+![PC](../assets/img/10-equipo_real/bios.jpeg "Imagen del PC")
 
 ## 4. Selección de las 3 ISOs
 
